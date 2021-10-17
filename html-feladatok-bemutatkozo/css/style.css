@@ -1,0 +1,81 @@
+img {
+    box-shadow: 3px 3px 7px black;
+    margin: 10px;
+}
+
+.home-image-row img {
+    height: 330px;
+    width: 250px;
+}
+
+.home-properties {
+    display: grid;
+    grid-template: '. . .';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.home-property {
+    text-align: center;
+    padding: 20px;
+}
+
+.works-section {
+    display: grid;
+    grid-template: '. . ';
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .works-section {
+        display: grid;
+        grid-template: '. ';
+    }
+}
+
+.works-section .column{
+    padding: 20px;
+}
+
+.gallery-section {
+    display: grid;
+    grid-template: '. . . ';
+    grid-gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .gallery-section{
+        display: grid;
+        grid-template: '. ';
+        grid-gap: 20px;
+    }
+}
+
+.gallery-section .gallery-container img{
+    height: 100%;
+    width: 100%;
+}
+
+/*Common*/
+
+.nav {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.article{
+    padding: 10px;
+}
+
+/* Hogy lehessen használni a fel a lap tetejére gombot */
+html {
+    font-size: 30px;
+}
