@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="index, follow" name="robots">
+    <meta content="Admin Dashboard projekt feladat" name="keywords">
+    <meta content="T360 Admin Dashboard" name="description">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <header class="header--dark">
+        <h3 class="header__title">
+            Admin Page
+        </h3>
+        <i class="fa fa-bars" aria-hidden="true" id="menu__icon"></i>
+        <div class="header__search">
+            <input class="search__input" type="search" placeholder="Search for...">
+            <button class="search__btn">
+                <i class="fa fa-search fa-inverse" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <aside class="menu">
+            <nav class="main__nav">
+                <ul class="nav__ul">
+                    <li class="nav__header">Core</li>
+                    <li class="nav__item"> <a> <i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard </a> </li>
+                    <li class="nav__header">Interface</li>
+                    <li class="nav__item"> <a> <i class="fa fa-windows" aria-hidden="true"></i> Layouts </a> </li>
+                    <li class="nav__item"> <a> <i class="fa fa-bookmark" aria-hidden="true"></i> Pages</a> </li>
+                    <li class="nav__header">Addons</li>
+                    <li class="nav__item"> <a> <i class="fa fa-area-chart" aria-hidden="true"></i> Charts </a> </li>
+                    <li class="nav__item"> <a> <i class="fa fa-table" aria-hidden="true"></i> Tables </a> </li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="content">
+            <h1 class="main__title">Dashboard</h1>
+            <div class="main__breadcrumb">Dashboard</div>
+            <div class="main__cards">
+                <div class="main__card main__card--blue">
+                    <div class="card__top">Primary Card</div>
+                    <div class="card__bottom">View Details<i class="angle fa fa-angle-right"></i></div>
+                </div>
+                <div class="main__card main__card--yellow">
+                    <div class="card__top">Warning Card</div>
+                    <div class="card__bottom yellow">View Details<i class="angle fa fa-angle-right"></i></div>
+                </div>
+                <div class="main__card main__card--green">
+                    <div class="card__top">Success Card</div>
+                    <div class="card__bottom green">View Details<i class="angle fa fa-angle-right"></i></div>
+                </div>
+                <div class="main__card main__card--red">
+                    <div class="card__top">Danger Card</div>
+                    <div class="card__bottom red">View Details<i class="angle fa fa-angle-right"></i></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
