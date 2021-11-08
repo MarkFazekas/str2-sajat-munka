@@ -1,0 +1,67 @@
+.modal__container {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    transition: visibility 3s, opacity 3s;
+}
+
+.modal__hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal__visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__content {
+    background-color: rgb(255, 255, 255);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+
+.btn__modalClose {
+    float: right;
+    background-color: transparent;
+    font-size: 1rem;
+    border: none;
+    padding: 1em;
+}
+
+.footer__modal button {
+    color: white;
+}
+
+.btn__ok {
+    background-color: rgb(0, 255, 0);
+    margin-left: 10px;
+}
+
+.btn__cancel {
+    background-color: rgb(255, 0, 0);
+}
+
+.footer__modal {
+    float: right;
+}
+
+@media only screen and (min-width: 560px) {
+    .modal__content {
+       width: 50%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .modal__content {
+       width: 100%;
+    }
+}

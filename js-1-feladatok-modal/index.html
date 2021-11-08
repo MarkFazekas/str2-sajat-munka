@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Modal</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu diam tortor. Morbi ac mi ipsum. Cras
+                tincidunt ut purus ac bibendum. Aenean vehicula dui vel tellus maximus ullamcorper. Mauris ac urna
+                lorem. Proin magna magna, auctor eget odio et, tempor molestie sapien. Donec ut massa id nunc posuere
+                ultrices. Aliquam id porta turpis, eget commodo mauris. Suspendisse euismod leo quis dolor auctor
+                vulputate. Pellentesque vitae enim et sapien blandit imperdiet eget id ante. Nulla finibus erat mi,
+                luctus iaculis magna iaculis a.
+            </p>
+            <p>
+                Proin velit tellus, iaculis et neque in, suscipit facilisis turpis. Fusce eu imperdiet ipsum.
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris
+                egestas vitae lorem non sagittis. Quisque nisi dolor, pellentesque et congue sollicitudin, placerat eget
+                lectus. Mauris vestibulum tellus a condimentum efficitur. Fusce id volutpat massa, at varius eros.
+                Vivamus a mauris dolor. In sagittis sodales varius. Fusce id semper ipsum. Proin fringilla eleifend
+                quam, vel rhoncus massa fermentum at. Nam rutrum consectetur molestie. Proin at quam aliquam, bibendum
+                nisl nec, ultrices lacus. Praesent porttitor in diam vitae ullamcorper. Integer cursus rhoncus dolor.
+                Curabitur lacinia, lacus non vulputate ullamcorper, massa libero congue nunc, ac aliquam nisl velit vel
+                nisi.
+            </p>
+            <button class="btn__modalOpen">Open</button>
+        </section>
+
+        <div class="modal__container modal__hidden" tabindex="0">
+            <div class="modal__content">
+                <button class="btn__modalClose">X</button>
+                <header>
+                    <h3>CSSScript.com</h3>
+                </header>
+                <section>
+                    <p>Maecenas in tellus vitae augue tempus maximus sed in purus. Praesent dignissim augue imperdiet
+                        turpis iaculis, at blandit lectus molestie. Aenean at tortor hendrerit, hendrerit nisl a, dictum
+                        est. Curabitur imperdiet aliquam ante a facilisis. Phasellus sed dignissim sem. Quisque libero
+                        arcu, iaculis id vulputate quis, iaculis eget tellus. Maecenas at erat nibh. Fusce ornare, odio
+                        id viverra lobortis, risus purus accumsan magna, et iaculis nulla turpis vel nisl. Aenean lacus
+                        quam, condimentum et aliquet sit amet, porttitor id mauris. Vestibulum ornare tellus ut tortor
+                        sollicitudin tincidunt. In pharetra lacus tempus metus vehicula mattis at quis erat.</p>
+                </section>
+                <footer class="footer__modal">
+                    <button class="btn__ok btn__modalClose">Okay</button>
+                    <button class="btn__cancel btn__modalClose">Cancel</button>
+                </footer>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+<script src="./main.js"></script>
+
+</html>
