@@ -17,10 +17,10 @@ modalClose.forEach(element => element.addEventListener('click', () => {
     modalContainer.classList.add('modal__hidden');
 }))
 
-window.addEventListener('click', e => {
+modalContainer.addEventListener('click', e => {
     if (!document.querySelector(".modal__content").contains(e.target)) {
         modalContainer.classList.remove('modal__visible');
-        modalContainer.classList.add('modal__hidden');
+        setTimeout(() => modalContainer.classList.add('modal__hidden'), 300);
     }
 });
 

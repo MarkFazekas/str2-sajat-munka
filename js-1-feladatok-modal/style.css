@@ -7,17 +7,16 @@
     right: 0;
     top: 0;
     position: fixed;
-    transition: visibility 3s, opacity 3s;
+    transition: opacity 0.3s;
+    opacity: 0;
 }
 
 .modal__hidden {
-    opacity: 0;
     visibility: hidden;
 }
 
 .modal__visible {
     opacity: 1;
-    visibility: visible;
 }
 
 .modal__content {
