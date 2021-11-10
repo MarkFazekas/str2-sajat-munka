@@ -12,7 +12,8 @@
 }
 
 .modal__hidden {
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
 }
 
 .modal__visible {
