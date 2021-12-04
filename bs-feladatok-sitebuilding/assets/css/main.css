@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+  font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+}
+
+.nav-link,
+.btn {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+p,
+footer {
+  font-family: 'Mulish', Helvetica, Arial, sans-serif;
+}
+
+.fs-xsmall {
+  font-size: x-small;
+}
+
+.fs-small {
+  font-size: small;
+}
+
+.navbar {
+  padding-left: 14%;
+  padding-right: 18%;
+}
+
+.navbar-bg-initial {
+  background-image: url('../img/bg-pattern.png'), linear-gradient(to right, #db2b30, #7d4097);
+}
+
+.navbar-bg-scrolled {
+  background: white;
+  color: rgba(0, 0, 0, 0.377);
+}
+
+.navbar-brand-initial {
+  color: #fdcc52 !important;
+  ;
+}
+
+.navbar-brand-initial:hover {
+  color: white !important;
+}
+
+.navbar-brand-scrolled {
+  color: black;
+}
+
+.navbar-brand-scrolled:hover {
+  color: #fdcc52 !important;
+}
+
+.navbar-link-initial {
+  color: rgba(255, 255, 255, 0.801) !important;
+}
+
+.navbar-link-initial:hover {
+  color: white !important;
+}
+
+.navbar-link-scrolled {
+  color: grey !important;
+}
+
+.navbar-link-scrolled:hover {
+  color: #fdcc52 !important;
+}
+
+.top {
+  background-image: url('../img/bg-pattern.png'), linear-gradient(to right, #db2b30, #7d4097);
+}
+
+.btn-white {
+  color: white;
+  border: 1px solid white;
+  font-size: small;
+  transition: all 0.3s;
+}
+
+.btn-white:hover {
+  background-color: #fdcc52;
+  border: 1px solid #fdcc52;
+}
+
+.download {
+  background: #fbce4e;
+}
+
+#features hr {
+  background: linear-gradient(to right, #db2b30, #7d4097);
+  margin: 0;
+}
+
+#features i {
+  color: #B73058;
+}
+
+.google-badge {
+  width: 135px;
+}
+
+.icon::before {
+  font-size: 4rem;
+}
+
+.section__get_started {
+  background: rgba(0, 0, 0, 0.4) url('../img/bg-cta.jpg');
+  background-blend-mode: darken;
+  background-size: 100%;
+}
+
+.section__get_started__text {
+  padding-top: 25%;
+  padding-left: 15%;
+  padding-bottom: 20%;
+}
+
+.icon-container {
+  width: 3rem;
+  height: 3rem;
+}
+
+.fa-twitter {
+  background-color: rgb(29, 161, 242, 0.9);
+  transition: background-color 0.3s;
+}
+
+.fa-twitter:hover {
+  background-color: rgb(29, 161, 242, 1);
+}
+
+.fa-facebook-f {
+  background-color: rgb(59, 91, 152, 0.9);
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.fa-facebook-f:hover {
+  background-color: rgb(59, 91, 152, 1);
+}
+
+.fa-google-plus-g {
+  background-color: rgb(221, 75, 57, 0.9);
+  transition: background-color 0.3s;
+}
+
+.fa-google-plus-g:hover {
+  background-color: rgb(221, 75, 57, 1);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fdcc52 !important;
+}
