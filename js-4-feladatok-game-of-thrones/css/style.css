@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+@font-face {
+    font-family: GameOfThrones;
+    src: url("../fonts/Game\ of\ Thrones.ttf");
+}
+
+html { 
+    height: 100%;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+}
+
+body {
+  background-image: url("../assets/site/mapblue.jpg");
+  background-position: top -500px left -500px;
+  margin: 0;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 20px;
+    height: 100vh;
+}
+
+.main__character__container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main__search__container {
+  width: 20%;
+  background-color: rgb(58, 58, 58);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.character__element {
+    padding-top: 10px;
+    /* flex: 0 0 12%; */
+    width: 12%;
+    height: calc((100% - 60px) / 6 - 12px);
+    text-align: center;
+
+}
+
+.character__portrait {
+    max-width: 60%;
+    max-height: calc(100% - 25px);
+
+    /*Animation*/
+    perspective: 1000px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/*Animation*/
+.character__element:hover .character__portrait {
+    transform: rotateY(180deg);
+}
+
+.character__clicked .character__portrait {
+    transform: rotateZ(45deg) scale(1.25);
+}
+
+.character__element:hover {
+    text-shadow: 0px 1px 0px rgb(150, 95, 85);
+}
+
+.character__clicked .character__name{
+    text-shadow: 0px -1px 0px rgb(230, 95, 85);
+}
+
+.character__name {
+    text-transform: uppercase;
+    color: rgb(120, 95, 85);
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 300px) {
+    .character__name {
+        font-size: 0.1rem;
+    }
+    .search__container__tittle{
+        font-size: 0.55rem;
+    }
+    .search__result__container{
+        font-size: 0.3rem;
+    }
+}
+
+@media only screen and (min-width: 300px) {
+    .character__name {
+        font-size: 0.2rem;
+    }
+    .search__container__tittle{
+        font-size: 0.65rem;
+    }
+    .search__result__container{
+        font-size: 0.4rem;
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    .character__name {
+        font-size: 0.3rem;
+    }
+    .search__container__tittle{
+        font-size: 0.75rem;
+    }
+    .search__result__container{
+        font-size: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .character__name {
+        font-size: 0.6rem;
+    }
+    .search__container__tittle{
+        font-size: 1rem;
+    }
+    .search__result__container{
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .character__name {
+        font-size: 0.75rem;
+    }
+    .search__container__tittle{
+        font-size: 1.25rem;
+    }
+    .search__result__container{
+        font-size: 1rem;
+    }
+}
+
+.main__search__container{
+    color: white;
+    box-sizing: border-box;
+}
+
+.search__container__tittle{
+    font-family: GameOfThrones, system-ui;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+    /* height: 10%; */
+}
+
+.search__result__container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+
+    /* padding-left: 20px; */
+}
+
+.search__result__found{
+    visibility: visible;
+}
+
+.search__result__picture__container {
+    margin: 0 auto;
+}
+
+.search__result__picture {
+    max-width: 100%;
+    max-height: 200px;
+    height: auto;
+}
+
+.search__result__name__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding: 0.5rem 0px;
+}
+
+.search__result__bio__container{
+    padding: 0 5%;
+    text-align: justify;
+}
+
+.search__result__house {
+    display: none;
+}
+
+.search__result__house__found {
+    display: inherit;
+}
+
+.search__box{
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 10px;
+}
+
+.search__button {
+    padding: 10px;
+    float: left;
+}
+
+.search__input {
+    padding: 10px;
+    float: left;
+    width: 60%;
+}

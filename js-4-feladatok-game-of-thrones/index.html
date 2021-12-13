@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c1372b3bdf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="main__container">
+            <div class="main__character__container" id="character__container">
+
+            </div>
+            <div class="main__search__container">
+                <div class="search__container__tittle">Game of Thrones</div>
+                <div class="search__result__container" id="search__result__container">
+                    <div class="search__result__picture__container" id="result">
+                        <!-- <object class="search__result__picture" id="result__picture" alt="House of Thrones" data="assets/pictures/viserys_targaryen.jpg" alt="Game Of Thrones image" type="image/jpg">
+                            <img src="https://picsum.photos/350/200" />
+                        </object> -->
+                        <img class="search__result__picture" id="result__picture" src="assets/pictures/viserys_targaryen.jpg" alt="Perfect image about the selected Player">
+                    </div>
+                    <div class="search__result__name__container">
+                        <div id="result__name">Name of Player</div>
+                        <img class="search__result__house" id="result__house" src="assets/houses/targaryen.png" alt="Image about the selected player's house">
+                    </div>
+                    <div class="search__result__bio__container" id="result__bio">
+                        Viserys Targaryen, called The Beggar King, is the heir of his father Aerys II and brother Rhaegar after their deaths during Robert's Rebellion. The war, however, turned him into an exile who plots to regain control of the Iron Throne. 
+                    </div>
+
+                    
+                </div>
+                <div class="search__box">
+                    <button class="search__button" id="search__button"><i class="fa fa-search"></i></button>
+                    <input class="search__input" id="search__input" type="text" placeholder="Search a character" name="search">
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+<script type="module">
+    import { fillImages, applySearch } from './js/got.js';
+    fillImages();
+    applySearch("#search__button", "#search__input");
+
+</script>
+
+</html>
